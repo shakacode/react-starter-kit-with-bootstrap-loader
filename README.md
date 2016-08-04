@@ -1,3 +1,18 @@
+
+
+Instructions for adding [bootstrap-loader](https://github.com/shakacode/bootstrap-loader/tree/v1) to
+the [react-starter-kit](https://github.com/kriasoft/react-starter-kit).
+ 
+```
+npm i --save-dev bootstrap-loader@1.1.0
+npm i --save-dev extract-text-webpack-plugin@1.0.1
+npm i --save-dev node-sass  
+  resolve-url-loader \ 
+  sass-loader \ 
+  bootstrap-sass \    
+  style-loader
+```
+
 ## React Starter Kit — "[isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)" web app boilerplate
 
 > [React Starter Kit](https://www.reactstarterkit.com) is an opinionated
