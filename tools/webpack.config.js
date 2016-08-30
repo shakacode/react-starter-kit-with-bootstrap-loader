@@ -275,6 +275,7 @@ const serverConfig = extend(true, {}, config, {
       const isExternal =
         request.match(/^[@a-z][a-z\/\.\-0-9]*$/i) &&
         !request.match(/^react-routing/) &&
+        !request.match(/^horyd-bootstrap-loader/) &&
         !context.match(/[\\/]react-routing/);
       cb(null, Boolean(isExternal));
     },
