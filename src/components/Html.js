@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { analytics } from '../config';
-import { css as bootstrapCss } from 'bootstrap-loader';
+import { css as bootstrapCss } from 'horyd-bootstrap-loader';
 
 function Html({ title, description, style, script, children }) {
   const css = bootstrapCss._getCss(); // eslint-disable-line no-underscore-dangle, max-len

@@ -199,7 +199,7 @@ const config = {
 // -----------------------------------------------------------------------------
 
 const clientConfig = extend(true, {}, config, {
-  entry: ['bootstrap-loader', './client.js'],
+  entry: ['horyd-bootstrap-loader', './client.js'],
 
   output: {
     filename: DEBUG ? '[name].js?[chunkhash]' : '[name].[chunkhash].js',
