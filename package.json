@@ -22,6 +22,7 @@
     "graphiql": "0.7.2",
     "graphql": "0.6.0",
     "history": "3.0.0",
+    "horyd-bootstrap-loader": "0.0.1",
     "isomorphic-style-loader": "1.0.0",
     "jsonwebtoken": "7.0.0",
     "markdown-it": "6.0.5",
