@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react';
 import { analytics } from '../config';
+import { css as bootstrapCss } from 'horyd-bootstrap-loader';
 
 function Html({ title, description, style, script, children }) {
+  const css = bootstrapCss._getCss(); // eslint-disable-line no-underscore-dangle, max-len
   return (
     <html className="no-js" lang="">
       <head>
@@ -12,6 +14,7 @@ function Html({ title, description, style, script, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <style id="css" dangerouslySetInnerHTML={{ __html: style }} />
+        <style id="bootstrap-css" dangerouslySetInnerHTML={{ __html: css }} />
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: children }} />

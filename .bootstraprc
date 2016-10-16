@@ -10,7 +10,7 @@ useCustomIconFontPath: false
 
 # Webpack loaders, order matters
 styleLoaders:
-  - style
+  - isomorphic-style
   - css
   - sass
 #  - isomorphic-style-loader

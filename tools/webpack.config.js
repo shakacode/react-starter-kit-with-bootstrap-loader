@@ -199,7 +199,7 @@ const config = {
 // -----------------------------------------------------------------------------
 
 const clientConfig = extend(true, {}, config, {
-  entry: ['bootstrap-loader', './client.js'],
+  entry: ['horyd-bootstrap-loader', './client.js'],
 
   output: {
     filename: DEBUG ? '[name].js?[chunkhash]' : '[name].[chunkhash].js',
@@ -275,6 +275,7 @@ const serverConfig = extend(true, {}, config, {
       const isExternal =
         request.match(/^[@a-z][a-z\/\.\-0-9]*$/i) &&
         !request.match(/^react-routing/) &&
+        !request.match(/^horyd-bootstrap-loader/) &&
         !context.match(/[\\/]react-routing/);
       cb(null, Boolean(isExternal));
     },
